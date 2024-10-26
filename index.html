@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма з валідацією та таблиця</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Форма для вводу даних</h2>
+<form id="dataForm">
+    <label>ПІБ:</label>
+    <input type="text" id="fullname" placeholder="ТТТТТТ Т.Т." required><br>
+    <label>Дата народження:</label>
+    <input type="text" id="birthdate" placeholder="ЧЧ.ЧЧ.ЧЧЧЧ" required><br>
+    <label>Адреса:</label>
+    <input type="text" id="address" placeholder="м. ЧЧЧЧЧЧ" required><br>
+    <label>e-mail:</label>
+    <input type="text" id="email" placeholder="тттттт@ттттт.com" required><br>
+    <label>Telegram:</label>
+    <input type="text" id="telegram" placeholder="@Т_ТТТТТ" required><br>
+    <button type="button" onclick="validateForm()">Перевірити</button>
+</form>
+
+<div class="table-container">
+    <h2>Таблиця (6х6)</h2>
+    <table id="table"></table>
+    <form id="colorForm">
+        <label for="selectedColor">Обрати колір:</label>
+        <input type="color" id="selectedColor" value="#ff0000"/>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
